@@ -1,0 +1,828 @@
+
+ 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Global Tags */
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgb(35, 35, 85);
+}
+
+span {
+  font-size: 0.9rem;
+  color: #757373;
+}
+
+h6 {
+  font-size: 1.1rem;
+  color: rgb(24, 24, 49);
+}
+
+/* Navigation */
+
+nav{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color:white;
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 8vw;
+    box-shadow:2px 2px 10px rgba(0,0,0, 0.15) ;
+}
+nav h2{
+    font-family: "Nunito Sans", sans-serif;
+    color: black ;
+    font-size: 2 rem;
+    letter-spacing: 1px;
+    margin-right: 2px;
+}
+
+
+nav img {
+    width: 150px;
+    cursor: pointer;
+    height: 100px;
+    margin-right:auto !important;
+    
+}
+
+nav .Navigation ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .Navigation ul li{
+    
+    list-style: none;
+    margin-left: 30px;
+}
+
+nav .Navigation ul li a{
+    text-decoration: none;
+    color: Black;
+    font-size: 18px;
+    font-weight: 500;
+}
+nav .Navigation ul li a.active,
+nav .Navigation ul li a:hover {
+    color: #007aff;
+    transition: 0.3sec ease;
+}
+
+/* Home */
+
+#Home{
+    background-image: linear-gradient(rgba(9,5,54,0.3),rgba(5,4,46,0.7)),url("Asset/back.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: auto; /* Adjusted */
+    padding-bottom: 60px; /* Added space at the bottom */
+    text-align: center; 
+}
+#Home h2{
+    font-family: "Nunito Sans", sans-serif;
+    color: white;
+    font-size: 3.2rem;
+    letter-spacing: 1px;
+}
+
+ #Home p{
+    font-family: "Nunito Sans", sans-serif;
+    width: 50%;
+    color: white;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-weight: 300;
+} 
+
+
+#Home .btn{
+    margin-top:30px ;
+
+}
+#Home a{
+    font-family: "Nunito Sans", sans-serif;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 30px;
+}
+
+#Home a.blue{
+    color: #fff;
+    background: rgb(21, 21, 100);
+    transition:0.3 ease;
+
+}
+#Home a.blue:hover{
+    color: rgb(21, 21, 100);
+    background: #fff;  
+}
+
+#Home a.yellow{
+    color: #fff;
+    background: #fdc93b;
+    transition:0.3 ease;
+
+}
+
+#Home a.yellow:hover{
+    color: rgb(21, 21, 100);
+    background: #fff;  
+}
+
+/* Programs */
+
+#Programs{
+    padding: 5vw 8vw 0 8vw ;
+    text-align: center;
+
+}
+
+#Programs p{
+    font-size: 1.5rem;
+    font-weight: 600;
+   
+}
+
+#Programs .prog-box li{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+    
+}
+
+#Programs .prog-base li a{
+    text-decoration: none;
+    color: Black;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+#Programs img{
+    width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 12px;
+    border-image: round;
+}
+#Programs h1{
+    padding-bottom: 0%;
+    margin-bottom: 0;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 3.2rem;
+    font-weight: 500;
+    color: rgb(21, 21, 100);
+} 
+
+#Programs .prog-base{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    grid-gap:1rem ;
+    margin-top: 50px;
+}
+
+#Programs .prog-box{
+    background: #f9f9ff;
+    text-align: start;
+    border-style: groove;
+    border-color: #007aff;
+    border-radius: 10px;
+}
+
+#Programs .prog-box h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(56, 56, 59) ;
+    padding: 13px 15px 7px 15px;
+
+}
+#Programs .prog-box p{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(70, 70, 87) ;
+    padding: 13px 15px 7px 15px;
+
+}
+
+
+/* About */
+#About {
+    padding: 6vw 8vw 6vw 8vw;
+    /* background-image: linear-gradient(rgba(99,112,168,0.5), rgba(81,91,233,0.5)),url("Asset/signup.jpg"); */
+    /* background-image: linear-gradient(rgba(99,112,168,0.5), rgba(81,91,233,0.5)),url("Asset/about_us.jpg"); */
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#About {
+    padding: 5vw 8vw 0 8vw ;
+    
+
+}
+
+#About p{
+    text-align: justify ;
+    font-size: 1rem;
+    font-weight: 400;
+   
+}
+
+#About h1{
+
+    padding-bottom: 0%;
+    margin-bottom: 10px;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    color: rgb(21, 21, 100);
+    text-align: center;
+} 
+
+
+img{
+    padding-top: 20px;
+    width: 500px;
+    padding-left: 12px;
+    padding-top: 12px;
+    margin-right: 10px;
+}
+
+
+
+/* Admission */
+
+#Admission {
+    padding: 8vw 8vw 8vw 8vw;
+    background-image: linear-gradient(rgba(99,112,168,0.5), rgba(81,91,233,0.5)),url("Asset/signup.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+#Admission .Add_detail{
+    color: #fff;
+}
+
+#Admission .Form{
+    background: #fff;
+    border-radius: 8px;
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    padding: 40px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38   , 135, 0.37);
+
+}
+
+#Admission .Form input{
+    margin: 15px 0;
+    padding: 15px 10px ; 
+    border: 1px solid rgb(84, 40, 241);
+    outline: none;
+}
+
+#Admission .Form .btn{
+    margin-top: 20px;
+
+
+}
+
+#Admission .Form input::placeholder{
+    color: #413c34;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+#Admission .Form a.yellow{
+    color: #fff;
+    background: #fdc93b;
+    transition:0.3 ease;
+
+}
+
+#Admission .Form a.yellow:hover{
+    color: rgb(21, 21, 100);
+    background: #fff;  
+}
+
+#Admission a{
+    font-family: "Nunito Sans", sans-serif;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 30px;
+}
+
+/* Experts */
+ 
+#Experts{
+    padding: 8vw 8vw 0 8vw;
+    text-align: center;
+    
+
+}
+
+#Experts .Experts-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+
+
+}
+
+#Experts .Experts-box{
+    background: #fafaf1;
+    padding:30px 10px  ;
+    
+}
+
+
+/* footer */
+
+footer{
+    padding: 8vw;
+    background-color: #101c32;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+footer .Footer-col{
+    padding-bottom: 40px;
+
+}
+
+footer h3{
+    color: rgba(241, 240, 245);
+    font-weight: 600;
+    padding-bottom: 20px;
+
+}
+
+footer li{
+    list-style: none;
+    color: #7b838a;
+    padding: 10px 0;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3 ease;
+}
+
+footer li:hover{
+    color: rgba(241, 240, 245);
+    
+}
+
+footer p{
+    color: rgba(241, 240, 245);
+}
+
+footer .Subs{
+    margin-top: 20px;
+    border-image: round;
+}
+
+footer input{
+    width: 220px;
+    padding: 15px 12px;
+    background: #334f6c;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+footer .btn{
+    margin-top:30px ;
+
+}
+footer a{
+    font-family: "Nunito Sans", sans-serif;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 30px;
+}
+
+
+footer.Subs a.yellow{
+    color: #fff;
+    background: #fdc93b;
+    transition:0.3 ease;
+
+}
+
+footer.Subs a.yellow:hover{
+    color: rgb(21, 21, 100);
+    background: #fff; 
+}
+
+/* 2nd-page */
+/* about */
+
+#about-Home{
+    background-image: linear-gradient(rgba(9,5,54,0.3),rgba(5,4,46,0.7)),url("Asset/back4.jpg");
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    padding-top: 40px;
+
+}
+
+#about-Home h2 {
+    color: #fff;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+#about-container{
+    display: flex;
+    align-items: center;
+    padding: 8vw 8vw 2vw 8vw;
+    margin-bottom: 60px;
+}
+
+#abour-container .about-img{
+    width: 60%;
+    margin-bottom: 80px;
+}
+
+#abour-container .about-text{
+    width: 60%;
+    padding: 60px;
+}
+#abour-container .about-text h2{
+    color: #29303b ;
+    padding-bottom: 15px;
+    margin-bottom: 60px;
+}
+#abour-container .about-text p{
+    color:  #686f7a;
+    font-weight: 300;
+    margin-bottom: 60px;
+}
+.video-description-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+  }
+ 
+  .video-frame {
+    width: 38%;
+    padding: 20px; /* Add padding for the frame */
+    border: 6px solid #705f32; /* Border color for the frame */
+    border-radius: 15px; /* Add border radius for rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* Add box shadow for a shiny look */
+    margin-right: 80px;
+    margin-left:150px;
+    margin-bottom: 60px;
+   
+  } 
+  .description1 {
+    width: 50%;
+    padding: 20px; /* Add padding for the text description */
+    color: #fff;
+    margin-top: 10px;
+    font-size: x-large; /* Text color for the description */
+  }
+
+/* contact */
+#contact{
+    padding: 8vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#contact .getin{
+    width: 350px;
+
+}
+
+#contact .getin h2{
+    color: #2c234d;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: .8;
+    margin-bottom: 16px;
+    
+}
+
+#contact .getin p{
+    color: #686875;
+
+    line-height: 24px;
+    margin-bottom: 33px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e5e4ed;
+    
+}
+
+#contact .getin h3{
+    color: #2c234d;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 26px;
+    margin-bottom: 15px;
+}   
+
+
+#contact .getin .getin-details div{
+    display: flex;
+}
+
+
+#contact .getin .getin-details div .get{
+    font-size: 16px;
+    line-height: 22px;
+    color: #5838fc;
+    margin-right: 20px;   
+}
+
+#contact .form{
+    width: 60%;
+    background: #f7f6fa;
+    padding: 40px;
+    border-radius: 10px;
+}
+#contact .form h4{
+    font-size: 24px;
+    color: #2c234d;
+    line-height: 30px;
+    margin-bottom: 8px;
+}
+
+#contact .form .form-row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#contact .form .form-row input{
+    width: 48%;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 3px;
+    border: none;
+    background: #fff;
+    color:#7e7c87 ;
+    outline: none;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+}
+#contact .form .form-col input,
+#contact .form .form-col textarea{
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 3px;
+    border: none;
+    background: #fff;
+    color:#7e7c87 ;
+    outline: none;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+}
+
+#contact .form button{
+    font-size: .9rem;
+    padding: 13px 25px;
+    background: rgb(21, 21, 100);
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+
+/* chatbot */
+
+/* chatbot */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #f5f5f5; /* Light background for the entire page */
+  }
+  
+  #chat-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #4CAF50; /* Green color for the icon */
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease; /* Add transition for hover effect */
+  }
+  
+  #chat-icon:hover {
+    background-color: #3e8e41; /* Darker green on hover */
+  }
+  
+  .fas.fa-comment {
+    font-size: 20px;
+  }
+  
+  /* Add your existing CSS styles here */
+  
+  /* New styles for chatbot window */
+  #chatbot-window {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 350px;
+    /* height: 500px; Remove fixed height */
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000; /* Adjust the z-index value as needed */
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    opacity: 0; /* Hide the window by default */
+    pointer-events: none; /* Disable pointer events on the hidden window */
+  }
+  
+  #chatbot-window.active {
+    width: 25%;
+    transform: translateY(0);
+    opacity: 1; /* Show the window when active */
+    pointer-events: auto; /* Enable pointer events when the window is visible */
+  }
+  
+  
+  #chat-header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e0e0e0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  #chat-title {
+    font-weight: bold;
+    margin-right: 50px;
+  }
+  
+  #close-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute; /* Position the button absolutely */
+    
+    right: 5px; /* Align the button to the right */
+    font-size: 18px;
+    color: #333;
+    transition: all 0.3s ease;
+  }
+  
+  #close-button:hover {
+    color: #999;
+  }
+  
+  .message {
+    margin: 5px 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  #user {
+    background-color: #ddd;
+    text-align: right;
+    border-top-right-radius: 0;
+  }
+  
+  #bot {
+    background-color: #f5f5f5;
+    text-align: left;
+    border-top-left-radius: 0;
+  }
+  
+  #input-section {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  #input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+    height: 100%; /* Set height to 100% */
+  }
+  
+  button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button#clear-button {
+    background-color: #f44336; /* Red color for clear button */
+    margin-right: 5px; /* Add margin between the buttons */
+  }
+  
+  button:hover {
+    background-color: #3e8e41;
+  }
+  
+  #chat-icon svg {
+    width: 50%; /* Adjust width and height as needed */
+    height: 50%;
+  }
+  
+  #chat-header svg {
+    width: 10%;
+    height: 10%;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 769px) {
+}
+
+@media (max-width: 475px) {
+}
